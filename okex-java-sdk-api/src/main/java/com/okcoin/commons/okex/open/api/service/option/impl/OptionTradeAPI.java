@@ -87,6 +87,6 @@ public interface OptionTradeAPI {
 
     //获取当前账户交易的手续费率
     @GET("/api/option/v3/trade_fee")
-    Call<JSONObject> getTradeFee();
+    Call<JSONObject> getTradeFee(@Query("category") String category);
 
 }

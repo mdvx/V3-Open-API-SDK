@@ -114,7 +114,7 @@ interface FuturesTradeAPI {
 
     //当前账户交易手续等级的费率
     @GET("/api/futures/v3/trade_fee")
-    Call<JSONObject> getTradeFee();
+    Call<JSONObject> getTradeFee(@Query("category") String category);
 
     @GET("/api/futures/v3/accounts/{instrument_id}/holds")
     Call<Holds> getHolds(@Path("instrument_id") String instrument_id);

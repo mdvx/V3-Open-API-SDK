@@ -166,6 +166,6 @@ public class SwapUserAPIServiceImpl implements SwapUserAPIServive {
 
     @Override
     public String getTradeFee() {
-        return client.executeSync(api.getTradeFee());
+        return client.executeSync(api.getTradeFee("1"));
     }
 }

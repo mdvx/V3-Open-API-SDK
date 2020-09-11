@@ -49,6 +49,6 @@ public class SpotAccountAPIServiceImpl implements SpotAccountAPIService {
 
     @Override
     public JSONObject getTradeFee() {
-        return this.client.executeSync(this.api.getTradeFee());
+        return this.client.executeSync(this.api.getTradeFee("1"));
     }
 }

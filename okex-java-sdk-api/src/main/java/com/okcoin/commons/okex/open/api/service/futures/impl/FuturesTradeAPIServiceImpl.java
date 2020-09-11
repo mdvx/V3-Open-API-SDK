@@ -168,7 +168,7 @@ public class FuturesTradeAPIServiceImpl implements FuturesTradeAPIService {
 
     @Override
     public JSONObject getTradeFee() {
-        return this.client.executeSync(this.api.getTradeFee());
+        return this.client.executeSync(this.api.getTradeFee("1"));
     }
 
     @Override
